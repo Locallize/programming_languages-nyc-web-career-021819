@@ -2,7 +2,7 @@ def reformat_languages(languages)
   # your code here
   new_lang = {}
   languages.each do |styple, language|
-    languages.each do |name, attri|
+    styple.each do |name, attri|
       attri.each do |type, value|
         
       
