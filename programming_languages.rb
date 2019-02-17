@@ -5,4 +5,6 @@ def reformat_languages(languages)
     languages.each do |name, attri|
       
       new_lang
+    end
+  end
 end
