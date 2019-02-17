@@ -1,7 +1,7 @@
 def reformat_languages(languages)
   # your code here
   new_lang = {}
-  languages.each do |styple, languages|
+  languages.each do |styple, language|
     languages.each do |name, attri|
       attri.each do |type, value|
         
@@ -9,7 +9,7 @@ def reformat_languages(languages)
       if new_lang.key?(name) == false
       new_lang[name] = {type => value, :style => [styple]}
     else
-      new_lang[name][:style] << style
+      new_lang[name][:style] << language
     end
   end
     end
