@@ -7,8 +7,12 @@ def reformat_languages(languages)
         
       
       if new_lang.key?(name) == false
-      new_lang[name][:style] = []
+      new_lang[name] = {type => value, ::style => [styple]}
+    else
       new_lang[name][:style] << style
     end
   end
+    end
+  end
+  new_lang
 end
